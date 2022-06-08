@@ -10,7 +10,7 @@ on:
     branches: [ "main", "*" ]
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   build:
@@ -39,3 +39,10 @@ jobs:
           file: sqlite3/coverage.xml
           name: codecov-umbrella
           fail_ci_if_error: true
+      - name: Create coverage comment
+        id: coverageComment
+        if: ${{ matrix.python-version==3.10 }}
+        uses: MishaKav/pytest-coverage-comment@main
+        with:
+          pytest-coverage-path: sqlite3/coverage.xml
+
