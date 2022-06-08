@@ -1,3 +1,5 @@
+from pprint import pprint
+
 from cdcc.sample.sqlite3.sample import connect_to_database, create_table, insert_into, select_all
 
 
@@ -11,9 +13,8 @@ def main(database: str):
         ('1005-02', '経営事項(5月分)'),
     ])
     select_all(cursor)
-    for row in cursor:
-        print(row)
+    pprint(cursor.fetchall())
 
 
 if __name__ == '__main__':  # pragma no cover
-    main('sample.db')
+    main(':memory:')
