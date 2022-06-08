@@ -11,8 +11,8 @@ def connect_to_database(database: str = DEFAULT_DATABASE) -> Connection:
     :return: データベース接続オブジェクト
     :rtype: Connection
     """
-    connection = sqlite3.connect(database)
-    return connection
+
+    return sqlite3.connect(database)
 
 
 def close_database(connection: Connection) -> None:
@@ -23,10 +23,10 @@ def close_database(connection: Connection) -> None:
     :rtype: None
     """
 
-    connection.close()
+    return connection.close()
 
 
-def create_table(cursor: Cursor) -> Connection:
+def create_table(cursor: Cursor) -> Cursor:
     """job_noテーブルを作成し、Cursorオブジェクトを返却する。
 
     :param Cursor cursor: Cursorオブジェクト
@@ -38,7 +38,7 @@ def create_table(cursor: Cursor) -> Connection:
     return cursor.execute(sql)
 
 
-def drop_table(cursor: Cursor) -> None:
+def drop_table(cursor: Cursor) -> Cursor:
     """job_noテーブルを削除し、Cursorオブジェクトを返却する。
 
     :param Cursor cursor: Cursorオブジェクト
@@ -54,9 +54,21 @@ def insert_into(cursor: Cursor, new_data: [(str, str)]) -> Cursor:
     """新規データの投入
 
     :param Cursor cursor: Cursorオブジェクト
-    :param [(str, str)] new_data: 投入するデータの配列 例:[('1003-02', '共済定例4月分'),('1004-02', '減免申請書5月分'),...]
+    :param list[tuple[str, str]] new_data: 投入するデータの配列 例:[('1003-02', '共済定例4月分'),('1004-02', '減免申請書5月分'),...]
     :return: Cursorオブジェクト
     :rtype: Cursor
     """
 
     return cursor.executemany('INSERT INTO jobs(no, name) values(?, ?)', new_data)
+
+
+def select_all(cursor: Cursor) -> Cursor:
+    """jobsテーブルからデータを全件取得し、返却する
+
+    :param Cursor cursor: Cursorオブジェクト
+    :return: Cursorオブジェクト
+    :rtype: Cursor
+    """
+
+    sql = 'SELECT * FROM jobs'
+    return cursor.execute(sql)
