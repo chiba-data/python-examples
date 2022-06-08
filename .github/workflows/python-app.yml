@@ -29,7 +29,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install poetry
-        (cd sqlite3 && poetry install)
+          (cd sqlite3 && poetry install)
     - name: Test with pytest
       run: |
         (cd sqlite3 && poetry run pytest)
