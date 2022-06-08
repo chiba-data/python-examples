@@ -29,9 +29,6 @@ def close_database(connection: Connection) -> None:
 def create_table(cursor: Cursor) -> Connection:
     """job_noテーブルを作成し、Cursorオブジェクトを返却する。
 
-    テーブル名: job_no
-
-
     :param Cursor cursor: Cursorオブジェクト
     :return: Cursorオブジェクト
     :rtype: Cursor
