@@ -36,6 +36,6 @@ jobs:
         if: ${{ matrix.python-version==3.10 }}
         uses: codecov/codecov-action@v1
         with:
-          file: /coverage.xml
+          file: sqlite3/coverage.xml
           name: codecov-umbrella
           fail_ci_if_error: true
