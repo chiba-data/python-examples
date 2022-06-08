@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "sqlite3"
+name = "access"
 version = "0.1.0"
 description = ""
 authors = ["Kei Nakayama <kei.of.nakayama@gmail.com>"]
