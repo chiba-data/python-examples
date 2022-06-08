@@ -6,6 +6,7 @@ authors = ["Kei Nakayama <kei.of.nakayama@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = ">=3.9"
+coverage = "^6.4.1"
 
 [tool.poetry.dev-dependencies]
 pre-commit = "^2.19.0"
