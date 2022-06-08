@@ -5,7 +5,7 @@ name: Python application
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "add-sqlite3", "add-access" ]
   pull_request:
     branches: [ "main" ]
 
