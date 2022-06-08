@@ -13,7 +13,7 @@ def test_connect_to_database():
     except ConnectionError \
            or ConnectionResetError \
            or ConnectionAbortedError \
-           or ConnectionRefusedError:
+           or ConnectionRefusedError:  # pragma no cover
         assert False
 
 
@@ -25,7 +25,7 @@ def test_close_database():
     except ConnectionError \
            or ConnectionResetError \
            or ConnectionRefusedError \
-           or ConnectionAbortedError:
+           or ConnectionAbortedError:  # pragma no cover
         assert False
 
 
