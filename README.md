@@ -1,4 +1,5 @@
-[![wakatime](https://wakatime.com/badge/user/566126df-1e6d-4987-9110-c6778444c2ba/project/55828830-7656-4f80-badb-c7c2d6182fdd.svg)](https://wakatime.com/badge/user/566126df-1e6d-4987-9110-c6778444c2ba/project/55828830-7656-4f80-badb-c7c2d6182fdd)
+[![wakatime](https://wakatime.com/badge/user/566126df-1e6d-4987-9110-c6778444c2ba/project/2c8ed0c8-8e18-47e1-8ae1-46cd1b6d3d16.svg)](https://wakatime.com/@kexi/projects/pkruuohfck)
+[![Python application](https://github.com/chiba-data/python-examples/actions/workflows/python-app.yml/badge.svg)](https://github.com/chiba-data/python-examples/actions/workflows/python-app.yml)
 # Python教育用サンプル
 
 ## 初めに

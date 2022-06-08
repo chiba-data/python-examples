@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/access/access.iml" filepath="$PROJECT_DIR$/access/access.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/python-examples.iml" filepath="$PROJECT_DIR$/.idea/python-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sqlite3/sqlite3.iml" filepath="$PROJECT_DIR$/sqlite3/sqlite3.iml" />
     </modules>
   </component>
 </project>
