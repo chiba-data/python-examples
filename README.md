@@ -1,4 +1,4 @@
-[![wakatime](https://wakatime.com/badge/user/566126df-1e6d-4987-9110-c6778444c2ba/project/55828830-7656-4f80-badb-c7c2d6182fdd.svg)](https://wakatime.com/badge/user/566126df-1e6d-4987-9110-c6778444c2ba/project/55828830-7656-4f80-badb-c7c2d6182fdd)
+[![wakatime](https://wakatime.com/badge/user/566126df-1e6d-4987-9110-c6778444c2ba/project/55828830-7656-4f80-badb-c7c2d6182fdd.svg)](https://wakatime.com/@kexi/projects/pkruuohfck)
 # Python教育用サンプル
 
 ## 初めに
