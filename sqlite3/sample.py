@@ -1,8 +1,8 @@
 from cdcc.sample.sqlite3.sample import connect_to_database, create_table, insert_into, select_all
 
 
-def main():
-    connection = connect_to_database()
+def main(database: str):
+    connection = connect_to_database(database)
     cursor = connection.cursor()
     create_table(cursor)
     insert_into(cursor, [
@@ -16,4 +16,4 @@ def main():
 
 
 if __name__ == '__main__':  # pragma no cover
-    main()
+    main('sample.db')

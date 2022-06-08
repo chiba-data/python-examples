@@ -1,13 +1,11 @@
 import sqlite3
 from sqlite3 import Connection, Cursor
 
-DEFAULT_DATABASE = 'sample.db'
 
-
-def connect_to_database(database: str = DEFAULT_DATABASE) -> Connection:
+def connect_to_database(database: str) -> Connection:
     """データベース接続オブジェクトを返却する。
 
-    :param database: データベースファイル名(省略時:'sample.db')
+    :param database: データベースファイル名(例:'sample.db')
     :return: データベース接続オブジェクト
     :rtype: Connection
     """
