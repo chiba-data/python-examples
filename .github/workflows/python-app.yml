@@ -31,12 +31,12 @@ jobs:
           (cd sqlite3 && poetry install)
       - name: Test with pytest
         run: |
-          poetry run pytest --cov=. --cov-report=xml
+          (cd sqlite3 && poetry run pytest --cov=. --cov-report=xml)
       - name: Upload coverage
         if: ${{ matrix.python-version==3.10 }}
         uses: codecov/codecov-action@v1
         with:
-          file: ./coverage.xml
+          file: sqlite3/coverage.xml
           name: codecov-umbrella
           fail_ci_if_error: true
       - name: Create coverage comment
@@ -44,5 +44,5 @@ jobs:
         if: ${{ matrix.python-version==3.10 }}
         uses: MishaKav/pytest-coverage-comment@main
         with:
-          pytest-coverage-path: ./coverage.xml
+          pytest-coverage-path: sqlite3/coverage.xml
 
