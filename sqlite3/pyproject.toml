@@ -1,12 +1,11 @@
 [tool.poetry]
-name = "access"
+name = "sqlite3"
 version = "0.1.0"
 description = ""
-authors = ["Kei Nakayama <kei.of.nakayama@gmail.com>"]
+authors = ["Kei Nakayama <nakayama@chiba-data.co.jp>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pyodbc = "^4.0.32"
 
 [tool.poetry.dev-dependencies]
 
