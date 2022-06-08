@@ -1,5 +1,3 @@
-import sqlite3
+from cdcc.sample.sqlite3.sample import connect_to_database
 
-database = 'sample.db'
-connection = sqlite3.connect(database)
-connection.close()
+connection = connect_to_database()
